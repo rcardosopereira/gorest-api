@@ -68,8 +68,9 @@ click on E2E Testing
 If you want to run the tests in another one, just add browser and the name of the browser in the command. More info in [here](https://docs.cypress.io/guides/guides/launching-browsers#Browsers).
 
 ### Project Structure
-1. e2e/api.cy.js: here we have all tests
+1. e2e/api.cy.js: here we have all tests.
 2. e2e/validacao-schema.cy.js: here we have the test of schema api.
+3. fixtures/documentacao.txt: here we have the answers to the questions.
 
 ### All workflows (GitHub Actions: continuos integration)
 We use GitHub actions to build, test and deploy our app. You can check it in [here](https://github.com/rcardosopereira/gorest-api/actions).         
