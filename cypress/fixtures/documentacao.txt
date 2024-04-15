@@ -1,0 +1,29 @@
+NOS Automation Testing   
+1.  Escolher uma ferramenta para automatizar testes à seguinte Api REST, explica o porquê dessa escolha. https://gorest.co.in/ 
+Eu escolhi JavaScript porque é uma linguagem de programação amplamente utilizada tanto no frontend quanto no backend, o que facilita a integração entre os testes de API e outras partes do sistema. Além disso, JavaScript é a linguagem nativa para Cypress, o que torna a escrita de testes mais fluída e fácil de manter.
+O Cypress é uma ferramenta de teste end-to-end moderna que permite escrever testes rápidos, fáceis de entender e manter. Ele possui uma sintaxe clara e intuitiva, e sua capacidade de executar testes em tempo real é extremamente útil para o desenvolvimento e depuração de testes de API.
+
+2.  Explica os use case de teste; 
+A automação de testes com JavaScript e Cypress na API Gorest.co.in viabiliza diversos casos de uso;
+Validação de Funcionalidades:
+Testar a funcionalidade básica da API, como CRUD (Criar, Ler, Atualizar e Excluir) em diferentes recursos (tarefas, usuários, etc.).
+Validação de Respostas:
+Verificar se as respostas da API estão no formato correto (JSON, XML, etc.) e possuem os dados esperados.
+Validação de Esquemas:
+Garantir que as estruturas das respostas da API estejam em conformidade com os esquemas definidos.
+Validação de Autenticação:
+Testar os mecanismos de autenticação da API e garantir o acesso autorizado e negado a usuários com diferentes permissões.
+Validação de Desempenho:
+Medir o tempo de resposta da API e identificar gargalos de desempenho.
+
+3.  Em automação, com resposta desta API gorest.co.in/public/v2/todos 
+3.1. Aplica uma validação de schema ao resultado; 
+3.2. Valida se todos os resultados têm status completed; 
+3.3. Interpreta e valida o valor “due_on” 
+
+4.  DevOps, CI/CD.  
+4.1. Explica e justifica uma implementação de testes de carga a esta API; 
+Para o testes de carga, eu iria usar a ferramenta JMeter, pois iria ajudar a identificar o desempenho e a escalabilidade da API sob carga simulada, garantindo que ela possa lidar com um grande número de requisições simultâneas.
+
+4.2. Como implementarias uma solução de Continuous Testing, justifica;
+Integração Contínua (CI): Configurar um servidor CI como Jenkins, GitHub Actions ou GitLab CI para executar os testes automaticamente após cada push ou pull request. Neste caso, já deixei pronto o arquivo ci.yml para rodar com oGitHub Actions para executar os testes automaticamente após cada push ou pull request.
